@@ -30,9 +30,9 @@
                     for(author in currentPaper.authors){
                       let name = currentPaper.authors[author].name;
                       let z = name.includes("Zaitlen");
-                      if (z){
-                        citation+='<b>'
-                      }
+                      // if (z){
+                      //   citation+='<b>'
+                      // }
                       citation+=name+', ';
                       if (z){
                         citation+='</b>'
@@ -40,7 +40,7 @@
                     }
                     citation+=' \"'+currentPaper.title+'\" <i>'+currentPaper.fulljournalname+'</i> '+currentPaper.volume+'.'+currentPaper.issue+' ('+currentPaper.pubdate+'): '+currentPaper.pages+'.';
                     let elemDiv = document.createElement('li');
-                
+
                     elemDiv.innerHTML = citation;
                     document.getElementById("articles").appendChild(elemDiv);
                   }
@@ -56,7 +56,7 @@
 
 				<!-- Header -->
 					<header id="header" class="logo">
-						<img src="images/logo1.png" alt="logo" style="width:130px;height:150px;"/>
+						<!-- <img src="images/logo1.png" alt="logo" style="width:130px;height:150px;"/> -->
 						<!-- <a href="index.html" class ="logo">the Zaitlen lab @ UCLA</a> -->
 					</header>
 
@@ -83,7 +83,7 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Publications</h1>
+									<h1>publications</h1>
 									<!-- <span class="date">April 25, 2017</span>
 									<h1>This is a<br />
 									Generic Page</h1>
